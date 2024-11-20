@@ -16,6 +16,7 @@
 }
 .text-wrapper{
     font: 400 normal normal 12px/12px var(--primary-font-family);
+    margin-bottom: 0;
     color: var(--black);
 
 }

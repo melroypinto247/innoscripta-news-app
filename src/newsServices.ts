@@ -15,14 +15,11 @@ export const fetchNewsDataFromApis = async (): Promise<NewsData[]> => {
     try {
       // Fetch all API data concurrently
       const apiResponses = await Promise.all(apiUrls.map(url => fetch(url).then(res => res.json())));
-      console.log(apiResponses,"response")
   
       // Process and combine the data from all APIs
       const combinedNewsData: NewsData[] = apiResponses.flatMap((apiData: any,promiseIndex) => {
-        console.log(apiData,"response1234")
 
         const data = apiData.results || apiData.articles || apiData.response.results ||  [];
-      console.log(data,"response123")
 
 
         return data?.map((article: any): NewsData | undefined => {

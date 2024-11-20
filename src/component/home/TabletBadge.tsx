@@ -14,9 +14,9 @@ const Badges:React.FC<{title:string,filterValues:string | string[],onClick:()=>v
 
   return (
     <div className='badge-wrapper' onClick={onClick} >
-      <text className='text-wrapper'>
+      <p className='text-wrapper'>
        <b>{title}:</b>  {!Array.isArray(filterValues)?filterValues:makeStrFromArr(filterValues)}
-      </text>
+      </p>
     </div>
   )
 }
