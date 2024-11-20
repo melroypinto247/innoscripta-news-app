@@ -239,9 +239,10 @@ console.log(categories,sources,authors,"autors")
         <section className='news-list'>
         {
             newsData.map((obj:NewsData):undefined | JSX.Element=>{
-                if(obj.title==="[Removed]") return;
+                if(obj.title==="[Removed]") return undefined;
                 if(selectedSourceTab && obj.api === selectedSourceTab) return <NewsCard cardData={obj}/>
                 if(!selectedSourceTab) return <NewsCard cardData={obj}/>
+                return undefined;
                 
             })
         }
