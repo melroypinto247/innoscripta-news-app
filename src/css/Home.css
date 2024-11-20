@@ -1,0 +1,70 @@
+main{
+    width: 100%;
+    height: auto;
+}
+
+:root{
+    --primary-font-family:Arial,'sans-serif';
+    --primary-color:rgb(13, 187, 203);
+    --white:#fff;
+    --black:#000;
+
+}
+
+.news-feed-container{
+    max-width: 1200px;
+    margin-inline:auto;
+    padding:20px 0px;
+}
+
+.sources-nav{
+    display: flex;
+    gap: 20px;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+
+/* news */
+
+.news-list{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+
+/* filter list */
+.filter-list{
+    margin-top: 20px;
+    display: flex;
+    padding:0px 10px;
+    /* justify-content: space-evenly; */
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-list label{
+    font: 400 normal normal 14px/14px var(--primary-font-family) ;
+    text-decoration: underline;
+    padding:3px;
+}
+
+.btn-primary{
+    /* using !important because i am overwriting background-color of bootstrap element */
+    background-color: var(--primary-color) !important;
+    color:var(--black) !important;
+    opacity: 0.9 !important;
+    border: none !important;
+}
+.btn-primary:hover{
+    opacity: 1 !important;
+}
+
+
+

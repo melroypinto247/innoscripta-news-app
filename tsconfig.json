@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "jsx": "react-jsx", // For React 17+ (use "react" for React 16 and below)
+      "target": "ES2015",
+      "module":"CommonJS",
+      "strict": true,
+      "esModuleInterop": true
+    }
+  }

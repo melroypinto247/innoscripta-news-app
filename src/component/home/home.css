@@ -1,0 +1,88 @@
+.badge-wrapper{
+    background-color: var(--primary-color);
+    min-width: 50px;
+    height: auto;
+    padding:5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+
+}
+.badge-wrapper:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.text-wrapper{
+    font: 400 normal normal 12px/12px var(--primary-font-family);
+    color: var(--black);
+
+}
+
+.source-container{
+    padding:10px;
+    box-shadow: 0px 0px 8px var(--primary-color);
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+.source-container:hover{
+    background-color: #eae9e9;
+    cursor: pointer;
+}
+.source-container.selected{
+    border: 2px solid var(--primary-color);
+    box-shadow: none;
+}
+.source-name{
+    font: 400 normal normal 16px/17px var(--primary-font-family) ;
+}
+
+/* news list cards */
+.news-container{
+    overflow: hidden;
+    max-width: 375px;
+    /* height: 600px; */
+    box-shadow: 0px 0px 4px var(--primary-color);
+    border-radius: 10px;
+}
+.news-container .image-wrapper{
+    position: relative;
+}
+.news-container .image{
+    width: 100%;
+    object-fit:contain
+}
+
+.news-container .date-wrapper{
+    min-width: 100px;
+    min-height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.6);
+    font: 600 normal normal 14px/14px var(--primary-font-family);
+    padding: 5px;
+
+}
+.news-container .title{
+    font: bold normal normal 22px/22px var(--primary-font-family);
+}
+.news-container .description{
+    font: 400 normal normal 14px/17px var(--primary-font-family);
+}
+.news-container .publisher-info {
+    font:400 normal normal 14px/14px var(--primary-font-family);
+    display:flex;
+    flex-direction: column;
+    gap:10px
+}
+.news-container .publisher-info label{
+    font-weight: 600;
+    margin-right: 10px;
+}
+.news-container .title, .news-container .description,.news-container .readmore,.news-container .publisher-info{
+    margin: 20px 20px;
+}
