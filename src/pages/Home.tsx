@@ -131,7 +131,7 @@ const Home:React.FC = ():JSX.Element => {
           setInitialFilterValues(filterValues);
           handleCloseFilterModal();
         },
-        [copyNewsData, handleCloseFilterModal] // Dependencies
+        [copyNewsData, handleCloseFilterModal] 
       );
 
     const handleFilterBadgeClick=():void=>{
