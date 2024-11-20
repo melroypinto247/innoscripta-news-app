@@ -4,9 +4,8 @@ const newsApiUrl = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${pro
 const guardianApiUrl = `https://content.guardianapis.com/search?api-key=${process.env.REACT_APP_GUARDIAN_API_KEY}`;
 const newYorkApiUrl = `https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=${process.env.REACT_APP_NEW_YORK_API_KEY}`;
 
-// The function to fetch and combine data from 3 APIs
+// combine data from 3 APIs
 export const fetchNewsDataFromApis = async (): Promise<NewsData[]> => {
-    // Define the three API URLs
     const apiUrls = [
       newsApiUrl,
       guardianApiUrl,
